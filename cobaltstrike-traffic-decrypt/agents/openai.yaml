@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cobalt Strike Traffic Decrypt"
+  short_description: "Recover Beacon keys and decrypt Cobalt Strike HTTP traffic"
+  default_prompt: "Use $cobaltstrike-traffic-decrypt from this skill directory to recover Beacon keys and decrypt captured HTTP traffic."

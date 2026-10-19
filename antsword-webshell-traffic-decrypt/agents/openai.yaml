@@ -1,0 +1,4 @@
+interface:
+  display_name: "AntSword Webshell Traffic Decrypt"
+  short_description: "Decode AntSword webshell request and response traffic"
+  default_prompt: "Use $antsword-webshell-traffic-decrypt from this skill directory to decode captured AntSword webshell traffic."
