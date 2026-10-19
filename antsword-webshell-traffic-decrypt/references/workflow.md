@@ -86,20 +86,4 @@ python scripts/extract_antsword_response.py --response-file response.bin --prefi
 - Custom XOR or charset encoders
   Inspect the PHP body and reproduce that transform explicitly. Do not guess from the response alone.
 
-## Bundled samples
-
-The original toolkit and captures live in `antsword-traffic-decrypt/`:
-
-```powershell
-python scripts/decrypt_antsword.py --request-file antsword-traffic-decrypt/1.txt --response-file antsword-traffic-decrypt/2.txt
-```
-
-Equivalent step-by-step commands:
-
-```powershell
-python scripts/decode_antsword_body.py --file antsword-traffic-decrypt/1.txt
-python scripts/decode_http_gzip.py --file antsword-traffic-decrypt/2.txt --output response.bin --info
-python scripts/extract_antsword_response.py --request-file antsword-traffic-decrypt/1.txt --response-file response.bin --body-only
-```
-
 Use `scripts/` for analysis. `antsword-traffic-decrypt/http_gzip_decode.py` and `antsword-traffic-decrypt/antsword_body_decode.py` are the original helpers and are superseded by the skill scripts.

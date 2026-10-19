@@ -22,7 +22,7 @@ Follow the request and response as a pair. Run every command from this skill dir
 - Undo HTTP gzip or deflate before interpreting AntSword markers or payload text.
 - Use the `asoutput()` markers from the PHP loader to delimit the real response body.
 - If `asenc()` is not identity or base64, inspect the decoded PHP before assuming the response is plain text.
-- Use the scripts in `scripts/`. Files in `antsword-traffic-decrypt/` are the original toolkit and sample captures.
+- Use the scripts in `scripts/`. Files in `antsword-traffic-decrypt/` are the original toolkit.
 
 ## Resources
 
@@ -30,5 +30,5 @@ Follow the request and response as a pair. Run every command from this skill dir
 - `scripts/decode_http_gzip.py`: Extract the HTTP body and decompress gzip or deflate content.
 - `scripts/decode_antsword_body.py`: Decode common AntSword request bodies and summarize embedded commands.
 - `scripts/extract_antsword_response.py`: Use request-side markers to carve out the real response payload.
-- `antsword-traffic-decrypt/`: Original scripts plus sample request `1.txt` and gzip hex-dump response `2.txt`.
+- `antsword-traffic-decrypt/`: Original helper scripts, superseded by `scripts/`.
 - `references/workflow.md`: End-to-end request and response workflow with sample commands.

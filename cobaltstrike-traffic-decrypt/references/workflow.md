@@ -54,7 +54,7 @@ Choose one path.
 - no key argument, which tries known keys from `cs-1768/1768.json`
 
 ```powershell
-python cs-decrypt-metadata/cs-decrypt-metadata.py -f cs-decrypt-metadata/.cobaltstrike.beacon <metadata-value>
+python cs-decrypt-metadata/cs-decrypt-metadata.py -f <.cobaltstrike.beacon.keys> <metadata-value>
 python cs-decrypt-metadata/cs-decrypt-metadata.py <metadata-value>
 ```
 
@@ -134,12 +134,6 @@ python cs-parse-http-traffic/cs-parse-http-traffic.py -k <hmac_key_hex>:<aes_key
 ```
 
 `cs-parse-http-traffic.py` also accepts transform instructions with `-t` when the HTTP body needs the same malleable undo logic that was used for the metadata cookie.
-
-## Bundled samples
-
-- `cs-1768/dump.bin` and `cs-1768/stage(CeKi).bin`: Beacon/stage samples for `1768.py`
-- `cs-parse-http-traffic/demo.pcapng`: HTTP session sample for traffic decrypt
-- `cs-decrypt-metadata/.cobaltstrike.beacon`: example Java keystore-style private key file
 
 ## Bundled original tools
 

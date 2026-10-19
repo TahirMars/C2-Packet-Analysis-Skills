@@ -17,7 +17,7 @@ pyproject.toml                         Python 依赖声明
 - `SKILL.md`：技能入口与操作规则
 - `references/workflow.md`：完整命令序列
 - `scripts/`：当前推荐使用的分析脚本
-- 相应第三方工具与示例样本
+- 相应第三方工具
 
 分析时请在对应技能目录下执行命令，不要从仓库根目录引用旧路径。
 
@@ -58,7 +58,7 @@ pyproject.toml                         Python 依赖声明
 | `scripts/decode_antsword_body.py` | 解析请求体中的 PHP loader、输出标记与命令 |
 | `scripts/decode_http_gzip.py` | 从 Wireshark hex dump 或原始 HTTP 报文中解压 gzip/deflate |
 | `scripts/extract_antsword_response.py` | 按请求侧标记提取真实响应载荷 |
-| `antsword-traffic-decrypt/` | 原始脚本与示例报文，仅作对照与抽样验证 |
+| `antsword-traffic-decrypt/` | 原始脚本，仅作对照 |
 
 完整流程见 [`antsword-webshell-traffic-decrypt/SKILL.md`](antsword-webshell-traffic-decrypt/SKILL.md)。
 
@@ -67,4 +67,4 @@ pyproject.toml                         Python 依赖声明
 1. 根据目标协议进入对应技能目录。
 2. 先阅读该目录下的 `SKILL.md`，再按 `references/workflow.md` 执行命令。
 3. 优先使用 `scripts/` 中的封装脚本；子目录中的原始工具仅在对照或兼容旧流程时使用。
-4. 仓库内样本（Beacon dump、PCAP、AntSword 报文）仅用于验证工具链，不代表完整实战覆盖。
+4. 请使用自行获取的 Beacon 样本、PCAP 与 HTTP 报文；本仓库不再附带演示流量。
